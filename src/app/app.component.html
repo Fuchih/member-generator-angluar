@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="card">
+    <h1>Member Generator</h1>
+
+    <app-members [members]="members"></app-members>
+
+    <div class="add-members-container">
+      <input
+        #addMemberInput
+        type="text"
+        placeholder="name"
+        (input)="onInput(addMemberInput.value)"
+        [value]="newMemberName"
+      />
+      <button (click)="addMember()">Add</button>
+    </div>
+
+    <p *ngIf="errorMessage" class="error-msg">{{ errorMessage }}</p>
+  </div>
+</div>

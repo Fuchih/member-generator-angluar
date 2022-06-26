@@ -1,0 +1,11 @@
+.list {
+  margin  : 0;
+  padding : 0;
+  overflow: auto;
+}
+
+.member {
+  margin          : 1rem 0;
+  padding         : 0.5rem 0;
+  background-color: #ccc;
+}

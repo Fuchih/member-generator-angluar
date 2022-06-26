@@ -1,0 +1,5 @@
+<ul class="list" *ngIf="members.length">
+  <li class="member" *ngFor="let member of members">
+    {{ member | titlecase }}
+  </li>
+</ul>
